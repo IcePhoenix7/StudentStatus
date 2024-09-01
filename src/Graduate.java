@@ -11,9 +11,4 @@ public class Graduate extends Student{
             return "probation";
         }
     }
-
-    @Override
-    public String toString() {
-        return "Graduate "+super.toString();
-    }
 }

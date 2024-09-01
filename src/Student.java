@@ -1,10 +1,10 @@
 public abstract class Student {
     String id;
     double gpa;
-    protected Student(String id,double gpa){
+
+    protected Student(String id, double gpa) {
         this.id = id;
         this.gpa = gpa;
-
     }
 
     public String getId() {
@@ -15,10 +15,9 @@ public abstract class Student {
         return gpa;
     }
 
-    public abstract String getStatus();
-
-    @Override
-    public String toString() {
-        return "ID>> " + getId() + ", GPA>> " + getGpa()+ ", Status>> " + getStatus();
+    public final String displayStudent() {
+        return "ID>> " + getId() + ", GPA>> " + getGpa() + ", Status>> " + getStatus();
     }
+
+    abstract String getStatus();
 }

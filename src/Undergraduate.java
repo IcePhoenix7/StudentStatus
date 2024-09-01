@@ -14,10 +14,5 @@ public class Undergraduate extends Student{
             return "probation";
         }
     }
-
-    @Override
-    public String toString() {
-        return "Undergraduate "+super.toString();
-    }
 }
 

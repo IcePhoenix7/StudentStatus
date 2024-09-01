@@ -7,7 +7,7 @@ public class TestClass {
         for (int i = 0; i < 10; i++){
             double tempGpa = Math.random()*4;
             boolean tempGraduate = random.nextBoolean();
-            String tempId =  String.valueOf((int)((1000000-100000)*Math.random()+100000));
+            String tempId =  String.valueOf((int)Math.floor(Math.random()*(999999-100000+1) + 100000));
             if (tempGraduate){
                 student = new Graduate(tempId,tempGpa);
             }else{
