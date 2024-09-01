@@ -16,7 +16,7 @@ public abstract class Student {
     }
 
     public final String displayStudent() {
-        return "ID>> " + getId() + ", GPA>> " + getGpa() + ", Status>> " + getStatus();
+        return "ID>> " + getId() + ", GPA>> " + String.format("%.2f",getGpa()) + ", Status>> " + getStatus();
     }
 
     abstract String getStatus();

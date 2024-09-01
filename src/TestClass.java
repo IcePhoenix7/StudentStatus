@@ -10,10 +10,13 @@ public class TestClass {
             String tempId =  String.valueOf((int)Math.floor(Math.random()*(999999-100000+1) + 100000));
             if (tempGraduate){
                 student = new Graduate(tempId,tempGpa);
+                System.out.println("Graduate "+student.displayStudent());
+
             }else{
                 student = new Undergraduate(tempId,tempGpa);
+                System.out.println("Undergraduate "+student.displayStudent());
+
             }
-            System.out.println(student.toString());
         }
 
     }
